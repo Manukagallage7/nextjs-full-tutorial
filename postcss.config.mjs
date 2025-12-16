@@ -1,7 +1,15 @@
+import '../app/profile/global.css';
+
 const config = {
-  plugins: {
-    "@tailwindcss/postcss": {},
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}", // Adjust paths to match your project structure
+  ],
+  theme: {
+    extend: {},
   },
+  plugins: [],
 };
 
-export default config;
+export default function App({ Component, pageProps }: any) {
+  return <Component {...pageProps} />;
+}
